@@ -1,0 +1,43 @@
+
+<div class="container-fluid">
+  
+  <div class="section" id="bikku">
+    <% @ticket[0..5].each_with_index do  |s,g| %>
+      <table class="table" style="background-color: red; margin-bottom: 50px;">
+        <% s.each_with_index do |v,i|
+          %>
+          <tr class="">
+            <% v.each_with_index do |k,j| %>
+              <td style="<%= 'background-color: yellow; font-weight: bold;' if k != 0 %> font-size: 18px; border: 2px solid black; min-width: 150px;"><%= k if k != 0 %></td>
+            <% end %>
+          </tr>
+        <% end %>
+      </table>
+    <% end %>
+  </div>
+
+<hr>
+
+  <div class="img">
+    
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+    // for (var i = 0; i < 5; i++) {
+      var element = $("#bikku"); // global variable
+      var getCanvas; // global variable
+      console.log(element)
+      html2canvas(element, {
+       onrendered: function (canvas) {
+        f = canvas.toDataURL("image/png").replace(/^data:image\/png/, "data:application/octet-stream")
+        $(".img").append('<img style="margin-bottom: 20px;" src="'+f+'"/>');
+          // getCanvas = canvas;
+        }
+      });
+    // }
+  })
+</script>
