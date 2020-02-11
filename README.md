@@ -1,4 +1,4 @@
-# songs-tambola-ticket
+# Generate Songs Tambola Ticket 
 Generate Tambola tickets but songs instead of number
 Final Image
 
