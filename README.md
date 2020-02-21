@@ -1,7 +1,9 @@
 # Generate Songs Tambola Ticket 
 Generate Tambola tickets but songs instead of number.
 Its a creative way to enjoy guessing the songs.  
-PS: I have used embedded ruby for template you can use any templating engine. 
+PS: I have used embedded ruby for displaying them to the webpage, But you can use any templating engine.
+
+
 Final Image
 
 ![songs-tambola](https://github.com/Rajan4436/songs-tambola-ticket/blob/master/download%20.png)
