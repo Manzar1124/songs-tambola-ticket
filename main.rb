@@ -1,5 +1,5 @@
 @songs = ["aaj ke ladke",
-     "gudgudi", 
+     "Baby doll", 
      "Meri pyari behniya banegi dulhaniya", 
      "aankhon se pee le", 
      "Gun Master G 9", 
